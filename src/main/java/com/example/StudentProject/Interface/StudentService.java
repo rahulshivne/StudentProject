@@ -5,10 +5,15 @@
  */
 package com.example.StudentProject.Interface;
 
+import com.example.StudentProject.Entities.Student;
+import java.util.List;
+
 /**
  *
  * @author shivn
  */
 public interface StudentService {
-    
+    public List<Student> getStudents();
+    public List<Student> addStudent(Student s);
+    public Student findStudent(long id);
 }
